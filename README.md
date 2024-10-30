@@ -1,16 +1,16 @@
 # navigate
 
-A new Flutter project.
+This is a Flutter app that demonstrates how to:
 
-## Getting Started
+1. Use a Bottom Nav bar
+2. Set up Provider v6 to control data, including the desired route
 
-This project is a starting point for a Flutter application.
+This is based on a [Youtube video by Learn Flutter With
+Me](https://www.youtube.com/watch?v=oskdrY1shV0). (Thanks, LFWM guy!)
 
-A few resources to get you started if this is your first Flutter project:
+It was made before Flutter 3 was a thing, so there is one minor difference that
+I call out in `main.dart`.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+There is also a newer package, `go_router` that is based on these same ideas,
+but streamlines things a bit more. I'm leaving this here as a worked example of
+"Navigation 2".
