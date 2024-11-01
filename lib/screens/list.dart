@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:navigate/components/bottom_nav.dart';
-import 'package:navigate/controllers/navigation.dart';
 import 'package:navigate/controllers/thing_controller.dart';
 import 'package:provider/provider.dart';
 
@@ -24,8 +24,7 @@ class ListScreen extends StatelessWidget {
               onTap: () {
                 Provider.of<ThingController>(context, listen: false)
                     .changeIndex(index);
-                Provider.of<NavigationController>(context, listen: false)
-                    .changeScreen('/details');
+                context.go('/details');
               },
             );
           },
